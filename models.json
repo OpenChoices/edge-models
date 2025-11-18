@@ -1,0 +1,38 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2025-11-18",
+  "models": [
+    {
+      "name": "Gemma 3 1B IT (INT4)",
+      "description": "Compact Google Gemma model optimized for mobile devices",
+      "downloadUrl": "https://github.com/OpenChoices/edge-models/releases/download/v1.0.0/gemma3-1b-it-int4.task",
+      "capabilities": {
+        "maxTokens": 1024,
+        "contextWindow": 8192,
+        "languages": ["English", "multilingual"],
+        "features": ["chat", "instruction-following", "reasoning", "code-generation"]
+      },
+      "requirements": {
+        "minimumRAM": "1GB",
+        "recommendedRAM": "2GB",
+        "diskSpace": "600MB",
+        "androidVersion": 24
+      },
+      "performance": {
+        "size": "529MB",
+        "speed": "fast",
+        "quality": "very-good",
+        "backend": "CPU"
+      },
+      "metadata": {
+        "version": "1.0",
+        "license": "Gemma Terms of Use",
+        "source": "Google Gemma 3",
+        "quantization": "int4"
+      }
+    }
+  ],
+  "recommendations": {
+    "default": "Gemma 3 1B IT (INT4)"
+  }
+}
