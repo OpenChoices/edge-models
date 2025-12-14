@@ -6,6 +6,7 @@
       "name": "Gemma 3 1B IT (INT4)",
       "description": "Compact Google Gemma model optimized for mobile devices",
       "downloadUrl": "https://github.com/OpenChoices/edge-models/releases/download/v1.0.0/gemma3-1b-it-int4.task",
+      "modelType": "mediapipe",
       "capabilities": {
         "maxTokens": 1024,
         "contextWindow": 8192,
@@ -33,13 +34,14 @@
     },
     {
       "name": "Gemma 3N E2B IT Int4",
-      "description": "Gemma 3N model optimized for edge deployment with int4 quantization",
+      "description": "Gemma 3N model optimized for edge deployment with int4 quantization. Supports text, vision, and audio input.",
       "downloadUrl": "https://drive.usercontent.google.com/download?id=1uIgmlia6RrJNtpUq_WpekrPVnOcOyzKo&export=download&confirm=t",
+      "modelType": "litertlm",
       "capabilities": {
-        "maxTokens": 2048,
+        "maxTokens": 4096,
         "contextWindow": 8192,
         "languages": ["English", "multilingual"],
-        "features": ["chat", "instruction-following", "reasoning", "code-generation", "math"]
+        "features": ["chat", "instruction-following", "reasoning", "code-generation", "math", "vision", "audio"]
       },
       "requirements": {
         "minimumRAM": "4GB",
@@ -57,16 +59,20 @@
         "version": "1.0",
         "license": "Gemma Terms of Use",
         "source": "Google Drive",
-        "quantization": "int4"
+        "quantization": "int4",
+        "supportsVision": true,
+        "supportsAudio": true
       }
     }
   ],
   "categories": {
     "balanced": ["Gemma 3 1B IT (INT4)"],
-    "high-quality": ["Gemma 3N E2B IT Int4"]
+    "high-quality": ["Gemma 3N E2B IT Int4"],
+    "multimodal": ["Gemma 3N E2B IT Int4"]
   },
   "recommendations": {
     "default": "Gemma 3 1B IT (INT4)",
-    "quality": "Gemma 3N E2B IT Int4"
+    "quality": "Gemma 3N E2B IT Int4",
+    "multimodal": "Gemma 3N E2B IT Int4"
   }
 }
