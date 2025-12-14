@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "lastUpdated": "2025-11-18",
+  "lastUpdated": "2025-12-14",
   "models": [
     {
       "name": "Gemma 3 1B IT (INT4)",
@@ -30,9 +30,43 @@
         "source": "Google Gemma 3",
         "quantization": "int4"
       }
+    },
+    {
+      "name": "Gemma 3N E2B IT Int4",
+      "description": "Gemma 3N model optimized for edge deployment with int4 quantization",
+      "downloadUrl": "https://drive.usercontent.google.com/download?id=1uIgmlia6RrJNtpUq_WpekrPVnOcOyzKo&export=download&confirm=t",
+      "capabilities": {
+        "maxTokens": 2048,
+        "contextWindow": 8192,
+        "languages": ["English", "multilingual"],
+        "features": ["chat", "instruction-following", "reasoning", "code-generation", "math"]
+      },
+      "requirements": {
+        "minimumRAM": "4GB",
+        "recommendedRAM": "6GB",
+        "diskSpace": "3.5GB",
+        "androidVersion": 24
+      },
+      "performance": {
+        "size": "3.4GB",
+        "speed": "moderate",
+        "quality": "excellent",
+        "backend": "CPU"
+      },
+      "metadata": {
+        "version": "1.0",
+        "license": "Gemma Terms of Use",
+        "source": "Google Drive",
+        "quantization": "int4"
+      }
     }
   ],
+  "categories": {
+    "balanced": ["Gemma 3 1B IT (INT4)"],
+    "high-quality": ["Gemma 3N E2B IT Int4"]
+  },
   "recommendations": {
-    "default": "Gemma 3 1B IT (INT4)"
+    "default": "Gemma 3 1B IT (INT4)",
+    "quality": "Gemma 3N E2B IT Int4"
   }
 }
