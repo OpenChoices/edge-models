@@ -1,6 +1,6 @@
-# Edge Models for Artha
+# Edge Models
 
-LLM models repository for the Artha expense tracker Android app.
+LLM models repository for the Edge Devices.
 
 ## Available Models
 
